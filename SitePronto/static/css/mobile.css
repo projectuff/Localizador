@@ -1,0 +1,28 @@
+.container {
+  width: 96%;
+}
+
+#imagem{
+	background-image: url(../img/mapaMobile.jpg);
+}
+
+body {
+	width: 96%;
+	background-color: #000000;
+  }
+
+  fieldset{
+  	margin: 0.5rem 1;
+}
+
+.rightButton{
+  position: relative;
+  right: -15%; 
+}
+
+.left {
+  float: left !important; }
+
+.navBar {
+  text-align: center;
+}

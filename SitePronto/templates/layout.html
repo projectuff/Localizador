@@ -1,0 +1,43 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<link rel="stylesheet" href="static/css/foundation.css" /><meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/app.css">
+    <script src="js/foundation/foundation.js"></script>
+    <script src="static/js/foundation/foundation.topbar.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+
+    
+  	{% block head %}
+  	<title>{% block title %} Localização-Amigos{% endblock %} </title>
+  	{% endblock %}
+
+
+  </head>
+  <body id="bodyAmigo">
+  	 
+
+    <section class="top-bar-section" >      
+      <nav class="top-bar" id="corTob-bar">
+        <ul >
+          <li><a href="index" id="corTob-bar"><label id="labelAzul">Home</label></a></li>
+          <li><a href="Cadastro" id="corTob-bar"><label id="labelAzul">Cadastro</label></a></li>
+          <li><a href="Localizacao" id="corTob-bar"><label id="labelAzul">Localização</label></a></li>
+          <li><a href="QuemSomos" id="corTob-bar"><label id="labelAzul">Quem Somos</label></a></li>
+        </ul> 
+      </nav>
+    </section>
+    <div id="content">{% block content %} <h1>Content</h1> {% endblock %}</div>
+      
+
+  	  <script src="static/js/vendor/jquery.js"></script>
+      <script src="static/js/foundation.min.js"></script>
+      <script src="static/js/jquery.js"></script>
+  	  <script src="static/js/foundation.min.js"></script>
+  	
+
+  </body>
+  <script>
+  	$(document).foundation();
+  </script>
+  </html>
